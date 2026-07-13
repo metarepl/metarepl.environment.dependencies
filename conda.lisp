@@ -30,3 +30,9 @@
 
 (defun install-package (env package)
   (cmd:cmd (format nil "conda install --name ~A ~A" env package)))
+
+
+;; conda run -n some-environment
+;; usage: conda run [-h] [-n ENVIRONMENT | -p PATH] [-v] [--dev]
+;;                  [--debug-wrapper-scripts] [--cwd CWD] [-s]
+;;                  ...
