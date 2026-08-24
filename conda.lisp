@@ -1,5 +1,5 @@
 (in-package #:cl-user)
-(defpackage #:conda
+(defpackage #:metarepl.environment.dependencies/conda
   (:use #:cl)
   (:export
    :current-env
@@ -8,7 +8,7 @@
    :install-package
    ))
 
-(in-package :entry-name)
+(in-package :metarepl.environment.dependencies/conda)
 
 (defun current-env ()
   "reports current environment"

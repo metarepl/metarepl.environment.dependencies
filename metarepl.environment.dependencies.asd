@@ -1,11 +1,9 @@
-(defsystem "lamb.environment.dependencies"
+(defsystem "metarepl.environment.dependencies"
   :description "external dependencies and conda"
-  :author "common-lamb (https://github.com/common-lamb)"
+  :author "metarepl (https://github.com/metarepl)"
   :version "0.0.1"
   :license "MIT"
-  :depends-on (
-               :lamb.base.click
-               )
+  :depends-on (:shelter)
   :serial t
   :components ((:file "conda")
                (:file "external-dependencies"))

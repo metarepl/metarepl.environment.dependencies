@@ -1,11 +1,11 @@
 (in-package #:cl-user)
-(defpackage #:external-dependencies
+(defpackage #:metarepl.environment.dependencies/external-dependencies
   (:use #:cl)
   (:export
    :check-dependencies
    ))
 
-(in-package :external-dependencies)
+(in-package :metarepl.environment.dependencies/external-dependencies)
 
 (defun check-dependencies (dependencies)
   "
